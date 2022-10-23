@@ -17,7 +17,7 @@ import java.io.InputStream;
 public class MixinBookContents {
     @Inject(at = @At("HEAD"), method = "loadJson", cancellable = true, remap = false)
     private void loadJson(ResourceLocation res, ResourceLocation fallback, CallbackInfoReturnable<InputStream> callback) {
-        I18nUpdateMod.LOGGER.debug("loading json from {}.", res);
+        I18nUpdateMod.LOGGER.info("loading json from {}.", res);
         try {
             callback.setReturnValue(Minecraft.getInstance().getResourceManager().getResource(res).getInputStream());
         } catch (IOException ignore) {

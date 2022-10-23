@@ -19,7 +19,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '2.0.4'
+version = '2.0.5'
 group = 'com.github.tartaricacid'
 archivesBaseName = 'i18nupdatemod-1.16.5'
 
